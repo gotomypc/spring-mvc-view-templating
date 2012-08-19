@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Comments</title>
+		<style type="text/css">
+		  span.label {
+		    display: inline-block;
+		    width: 100px;
+		    text-align: right;
+		    margin-right: 6px;
+		  }
+		  div {
+		    margin: 4px;
+		  }
+		  .field {
+		    width: 250px;
+		  }
+		</style>
+	</head>
+	<body>
+		<h1>Comments</h1>
+		<h2>Leave a comment</h2>
+		<div>
+		  <form id="commentForm" method="post">
+		    <div>
+		      <span class="label">Message:</span>
+		      <textarea class="field" name="message"></textarea>
+		    </div>
+		    <div>
+		      <span class="label">Name:</span>
+		      <input class="field" name="authorName" />
+		    </div>
+		    <div>
+		      <span class="label">Email:</span>
+		      <input class="field" name="authorEmail" />
+		    </div>
+		    <div>
+		      <span class="label">URL:</span>
+		      <input class="field" name="authorUrl" />
+		    </div>
+		    <div>
+		      <span class="label"></span>
+		      <input type="submit" value="add" />
+		    </div>
+		  </form:form>
+		</div>
+		{{#comments}}
+		  <div>
+		    <h2>Comment {{id}}</h2>
+		    <p>{{message}}</p>
+		    <p>{{authorName}}</p>
+		    <p>{{authorEmail}}</p>
+		    <p><a href="{{authorUrl}}">{{authorUrl}}</a></p>
+		  </div>
+		{{/comments}}
+	</body>
+</html>

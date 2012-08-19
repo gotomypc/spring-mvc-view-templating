@@ -2,11 +2,11 @@ package bootstrap.data;
 
 public class Comment {
 
-	private Long id;
-	private String authorName;
-	private String authorEmail;
-	private String authorUrl;
-	private String message;
+	public Long id;
+	public String authorName;
+	public String authorEmail;
+	public String authorUrl;
+	public String message;
 
 	public Long getId() {
 		return id;

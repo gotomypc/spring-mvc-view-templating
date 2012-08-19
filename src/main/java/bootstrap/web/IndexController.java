@@ -10,6 +10,6 @@ public class IndexController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String getIndex() {
-		return "redirect:comments";
+		return "redirect:jsp/comments";
 	}
 }

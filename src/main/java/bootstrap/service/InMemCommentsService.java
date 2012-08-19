@@ -28,6 +28,7 @@ public class InMemCommentsService implements CommentsService {
 	public synchronized long addComment(Comment comment) {
 		long id = nextId;
 		nextId = nextId + 1;
+		comment.setId(id);
 		comments.add(comment);
 		return id;
 	}

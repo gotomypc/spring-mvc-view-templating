@@ -43,6 +43,6 @@ public class CommentsController {
 	@RequestMapping(method = RequestMethod.POST)
 	public String postCommentForm(@ModelAttribute Comment comment) {
 		commentsService.addComment(comment);
-		return "redirect:/comments";
+		return "redirect:comments";
 	}
 }

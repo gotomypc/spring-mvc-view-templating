@@ -4,4 +4,9 @@ To run this demo, use the following command, then point your Web browser to [htt
 mvn jetty:run
 ```
 
+To generate project configuration for Eclipse, use the following command, then use File -> Import -> Existing Projects into Workspace.
+
+```
+mvn eclipse:eclipse -DdownloadSources=true  -DdownloadJavadocs=true
+```
 
