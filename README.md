@@ -1,4 +1,4 @@
-To run this demo, use the following command, then point your Web browser to [http://localhost:8080/spring-mvc-view-templating](http://localhost:8080/spring-mvc-view-templating).
+To run this demo, use the following command, then point your Web browser to [http://localhost:8080/spring-mvc-view-templating/jsp/](http://localhost:8080/spring-mvc-view-templating/jsp/) or [http://localhost:8080/spring-mvc-view-templating/mustache/](http://localhost:8080/spring-mvc-view-templating/mustache/).
 
 ```
 mvn jetty:run
